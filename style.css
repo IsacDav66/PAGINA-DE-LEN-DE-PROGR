@@ -9,6 +9,8 @@ button{
     border: none;
     padding: 10px 40px;
     text-shadow: 3px 0px 10px rgb(9, 22, 9);
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
     background-color: bisque;
@@ -42,8 +44,8 @@ h2{
 
 
 img{
- height: 20%;
- width: 20%;
+ height: 15%;
+ width: 15%;
  padding: auto;
  border-radius: 30px;
  display: block;
