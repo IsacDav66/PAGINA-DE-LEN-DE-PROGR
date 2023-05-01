@@ -4,13 +4,14 @@ button{
     color: brown;
     background-color: rgb(225, 225, 228);
     border-radius: 20px;
-    box-shadow: 5px 6px 0px rgb(23, 70, 33) ;
-    background-color: aquamarine;
+    box-shadow: 5px 6px 0px rgb(190, 178, 200) ;
+    background-color: rgb(215, 214, 214);
     border: none;
     padding: 10px 40px;
     text-shadow: 3px 0px 10px rgb(9, 22, 9);
     font-size: large;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 body{
     background-color: bisque;
@@ -19,8 +20,16 @@ body{
 menu{
     align-items: center;
     text-align: center;
+    display: flex;
+  justify-content: space-between;
 }
-{
+
+.button-div {
+    width: 800px; /* Ancho de 100 píxeles */
+    padding: 5px;
+  }
+
+button{
     font-family: 'Courier New', Courier, monospace;
 }
 h3{
@@ -29,13 +38,13 @@ h3{
     text-align: center;
     font-size: 200%;
 }
-h2{
+/*h2{
     color: cadetblue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     text-shadow:  5px 0px 0px rgb(9, 22, 9);
     font-size: 400%;
-}
+}*/
 .info{
 
     font-family: 'Courier New', Courier, monospace;
@@ -47,26 +56,32 @@ img{
  height: 15%;
  width: 15%;
  padding: auto;
- border-radius: 30px;
+ border-radius: 15%;
  display: block;
   margin: 0 auto;
 }
 
-div{
-    background-color: rgb(177, 255, 131);
+.div-contenid{
+    background-color: rgb(54, 65, 62);
    text-align: center;
     border-style:outset;
     border-radius: 3cm;
+    justify-content: center;
+    border-color: rgb(59, 71, 68);
+    display: inline-block;
+    padding: 0px  100px;
 }
 
 .relleno{
-    background-color: rgba(61, 104, 112, 0.397);
+    background-color: rgba(141, 141, 146);
     border-radius: 0.5cm;
-    padding: 3 cm;
+    padding: 3px 200px;
     overflow: auto;
+    text-align:justify;
 }
 #footer{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 a{
@@ -76,5 +91,90 @@ a{
 }
 button:hover{
     background-color: azure;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255) ;
 }
 
+
+body {
+    background:rgb(93, 94, 96);
+    padding-top: 5em;
+
+  }
+
+
+.maquina_effect h2 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret 0.5s step-end infinite;
+    font-size: 200%;
+    display: flex;
+ 
+  }
+  
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  .contenedor{
+    display: flex;
+    justify-content: center;
+  }
+
+
+.parent{
+    text-align: center;
+}
+
+.editor {
+    background-color: #282c34;
+    border-radius: 5px;
+    
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 16px;
+   
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.hello{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: #282c34;
+}
+
+.button-copy{
+    background-color: rgba(0, 0, 0, 0.623);
+    box-shadow:none;
+    border-radius: 10px;
+    
+
+}
+
+.button-copy:hover{
+    background-color: black;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.541) ;
+}
+
+.editor code {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: normal;
+    white-space: pre;
+  }
